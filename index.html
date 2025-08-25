@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firmus Digital - Smart, Scalable, Impactful IT Solutions</title>
+    <meta name="description" content="Transform your business with Firmus Digital's IT consulting services. We cut inefficiencies, centralize operations, and help you find hidden profit.">
+    
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+     -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="firmus digital logo" class="logo-img">
+                    <h1>Firmus Digital</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Contact</button>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#services" class="nav-link-mobile">Services</a>
+                <a href="#about" class="nav-link-mobile">About</a>
+                <button class="btn btn-primary btn-full" onclick="scrollToSection('contact')">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Simplifying Business<br>
+                    <span class="text-primary">Through Smart Tech</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We cut inefficiencies, centralize operations, and help you find hidden profit.
+                </p>
+                <button class="btn btn-primary btn-lg hero-btn" onclick="scrollToSection('contact')">
+                    Book a Consultation
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="proof-section">
+        <div class="container">
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="laborStat">0%</div>
+                    <p class="stat-label">Less Manual Labor</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="turnaroundStat">0%</div>
+                    <p class="stat-label">Faster Project Turnaround</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="productivityStat">0X</div>
+                    <p class="stat-label">Productivity Increase</p>
+                </div>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Sarah Johnson">
+                    </div>
+                    <div class="testimonial-text">
+                        <div class="stars">
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <blockquote>
+                            "Firmus Digital transformed our entire operation. What used to take weeks now happens in days, and our team can focus on what really matters - growing the business."
+                        </blockquote>
+                        <cite>Sarah Johnson, CEO at TechFlow Solutions</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="about" class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Effortless Delivery</h2>
+                <p class="section-subtitle">Our proven process ensures smooth implementation and measurable results</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <h3>Consultative Discovery</h3>
+                    <p>We dive deep into your business processes to identify inefficiencies and opportunities for automation.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1h9l4-4-4-4H3"/>
+                        </svg>
+                    </div>
+                    <h3>Tailored Solution Design</h3>
+                    <p>Custom solutions designed specifically for your business needs, not one-size-fits-all approaches.</p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                        </svg>
+                    </div>
+                    <h3>Agile Development & Implementation</h3>
+                    <p>Transparent, iterative development with regular check-ins to ensure we're building exactly what you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time Section -->
+    <section class="time-section">
+        <div class="container">
+            <div class="time-content">
+                <div class="time-text">
+                    <h2 class="section-title">
+                        Quick Wins. <span class="text-primary">Lasting Impact.</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        We launch agile prototypes within weeks, not years. See immediate improvements while we build your complete solution.
+                    </p>
+                    <div class="time-feature">
+                        <svg class="time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        <span>Rapid deployment in 2-4 weeks</span>
+                    </div>
+                </div>
+                <div class="time-visual">
+                    <div class="time-illustration">
+                        <img src="assets/quick-wins-section.png" alt="Team working on YOUR project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive IT solutions designed to transform your business operations</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Website Development & UX Optimization</h3>
+                    <p>Modern, responsive websites that convert visitors into customers with optimized user experiences.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h3>Business Process Automations</h3>
+                    <p>Streamline repetitive tasks and workflows to free up your team for strategic work.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>In-House Business Applications</h3>
+                    <p>Custom applications tailored to your specific business needs and processes.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            <path d="M13 8H7"/>
+                            <path d="M17 12H7"/>
+                        </svg>
+                    </div>
+                    <h3>AI-Powered Bots</h3>
+                    <p>Intelligent chatbots and automation tools that handle customer inquiries and internal processes.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                            <line x1="6" y1="6" x2="6.01" y2="6"/>
+                            <line x1="6" y1="18" x2="6.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Hosting & Managed Services</h3>
+                    <p>Reliable hosting solutions with ongoing maintenance and support for peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div style="color: bisque;" class="cta-header">
+                <h2 >Future-Proof Your Digital Operations</h2>
+                <p >
+                    With Firmus Digital, efficiency, automation, and growth aren't buzzwords, they're your new reality.
+                </p>
+            </div>
+
+            <div class="cta-content">
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h3>Book a Free Consultation</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your project..." required rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        <h3 class="text-white">Get in Touch</h3>
+                        <p class="text-white-90">
+                            Ready to transform your business? Let's discuss how we can help you achieve your digital goals.
+                        </p>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label text-white">Email</p>
+                                <p class="contact-value text-white-90">info@firmusdigital.co.za</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label text-white">Phone</p>
+                                <p class="contact-value text-white-90">+27 74 244 2334</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label text-white">Website</p>
+                                <p class="contact-value text-white-90">www.firmusdigital.co.za</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Firmus Digital</h3>
+                    <p>Smart, Scalable, Impactful IT solutions that transform your business operations.</p>
+                    <p class="footer-copyright">© 2024 Firmus Digital. All rights reserved.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p>info@firmusdigital.co.za</p>
+                        <p>+27 74 244 2334</p>
+                        <p>www.firmusdigital.co.za</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Firmus Digital — Smart, Scalable, Impactful.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5,12 12,5 19,12"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
