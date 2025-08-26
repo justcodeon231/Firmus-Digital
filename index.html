@@ -315,26 +315,61 @@
 
             <div class="cta-content">
                 <!-- Contact Form -->
-                <div class="contact-form-card">
-                    <h3>Book a Free Consultation</h3>
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell us about your project..." required rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            Send Message
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
+<div class="contact-form-card">
+  <h3>Book a Free Consultation</h3>
+  <form id="contactForm" class="contact-form" action="https://formspree.io/f/mkgvweez" method="POST">
+    
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+    
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+    </div>
+    
+    <!-- Phone -->
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+27 74 123 4567">
+    </div>
+    
+    <!-- Services Dropdown -->
+    <div class="form-group">
+      <label for="service">I’m interested in:</label>
+      <select id="service" name="service">
+        <option value="">Not sure / Just want consultation</option>
+        <option value="ai-bots">AI-Powered Bots</option>
+        <option value="hosting">Hosting & Managed Services</option>
+        <option value="in-house-apps">In-House Business Applications</option>
+        <option value="process-automation">Business Process Automations</option>
+        <option value="website-ux">Website Development & UX Optimization</option>
+      </select>
+    </div>
+    
+    <!-- Project Description -->
+    <div class="form-group">
+      <label for="message">Tell us about your project <span style="font-weight:normal;">(optional, you can leave this for the call)</span></label>
+      <textarea id="message" name="message" rows="4" placeholder="Example: We want to automate our client onboarding process, improve our website UX, and implement an AI chatbot." ></textarea>
+    </div>
+    
+    <!-- Hidden fields for Formspree -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission - Firmus Digital">
+    <input type="hidden" name="_next" value="https://firmusdigital.co.za/thank-you">
+    
+    <!-- Submit -->
+    <button type="submit" class="btn btn-primary btn-full">
+      Send Message
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </button>
+  </form>
+</div>
+
 
                 <!-- Contact Info -->
                 <div class="contact-info">
