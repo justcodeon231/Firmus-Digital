@@ -533,8 +533,7 @@ h6 {
   transform: scale(1.05);
 }
 
-/* Testimonial */
-
+/* Testimonial 
 .testimonial-card {
   max-width: 64rem;
   margin: 0 auto;
@@ -626,7 +625,7 @@ h6 {
   color: #6b7280;
   font-weight: 600;
   font-style: normal;
-}
+} */
 
 /* Section Styles */
 .section-header {
