@@ -455,10 +455,37 @@ h6 {
   text-align: center;
   opacity: 0;
   transform: translateY(2rem);
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .stat-item.animate {
   animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.stat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(30, 58, 138, 0.1);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.stat-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--primary);
 }
 
 .stat-number {
@@ -476,8 +503,34 @@ h6 {
 }
 
 .stat-label {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  color: var(--foreground);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.stat-description {
+  font-size: 1rem;
   color: #6b7280;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.proof-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
 /* Testimonial */
