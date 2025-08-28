@@ -312,25 +312,25 @@ function animateCounter(element, start, end, suffix, duration) {
 }
 
 // Contact Form Handling
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault()
+// contactForm.addEventListener("submit", (e) => {
+//   e.preventDefault()
 
-  const formData = new FormData(contactForm)
-  const data = {
-    name: formData.get("name"),
-    email: formData.get("email"),
-    message: formData.get("message"),
-  }
+//   const formData = new FormData(contactForm)
+//   const data = {
+//     name: formData.get("name"),
+//     email: formData.get("email"),
+//     message: formData.get("message"),
+//   }
 
-  // Here you would typically send the data to your server
-  console.log("Form submitted:", data)
+//   // Here you would typically send the data to your server
+//   console.log("Form submitted:", data)
 
-  // Show success message
-  alert("Thank you for your message! We'll get back to you soon.")
+//   // Show success message
+//   alert("Thank you for your message! We'll get back to you soon.")
 
-  // Reset form
-  contactForm.reset()
-})
+//   // Reset form
+//   contactForm.reset()
+// })
 
 // Add click handlers for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((link) => {

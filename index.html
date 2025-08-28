@@ -531,7 +531,7 @@
                 <div class="contact-form-card">
                     <h3>Book a Free Consultation</h3>
                     <!-- updated contact form with Formspree integration and new fields -->
-                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mkgvweez" method="POST">
+                    <form id="contactForm" class="contact-form" action="https://staticsiteforms.co.uk/lonaleo20@gmail.com" method="POST">
                         
                         <!-- Name -->
                         <div class="form-group">
@@ -582,8 +582,61 @@
                         </svg>
                         </button>
                     </form>
+
+                    <!-- Toast -->
+                    <div id="toast" style="
+                    display:none;
+                    position:fixed;
+                    bottom:20px;
+                    right:20px;
+                    background:#111;
+                    color:#fff;
+                    padding:1rem 1.25rem;
+                    border-radius:8px;
+                    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+                    font-size:0.95rem;
+                    z-index:9999;
+                    animation: fadeInUp 0.4s ease;
+                    ">
+                    🎉 Form submitted successfully!
+                    </div>
+
+                    <style>
+                    @keyframes fadeInUp {
+                    from {opacity:0; transform:translateY(30px);}
+                    to {opacity:1; transform:translateY(0);}
+                    }
+                    </style>
+
+                    <script>
+                    function showToast(message) {
+                    const toast = document.getElementById('toast');
+                    toast.innerText = "🎉 " + message;
+                    toast.style.display = 'block';
+
+                    setTimeout(() => {
+                        toast.style.opacity = '0';
+                        setTimeout(() => {
+                        toast.style.display = 'none';
+                        toast.style.opacity = '1';
+                        }, 300); 
+                    }, 3500); 
+                    }
+
+                    document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault(); // stop the page reload
+
+                    // Here you’d normally send the form data with fetch/AJAX
+                    // For now, just trigger the toast
+                    showToast("Thanks! We'll be in touch soon.");
+                    
+                    // Optionally reset form
+                    this.reset();
+                    });
+                    </script>
                 </div>
             </div>
+
 
 
                 <!-- Contact Info -->
