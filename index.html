@@ -7,6 +7,7 @@
     <meta name="description" content="Transform your business with Firmus Digital's IT consulting services. We cut inefficiencies, centralize operations, and help you find hidden profit.">
     
     <!-- Google Fonts -->
+    <!-- commented out Google Fonts to match new version -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,6 +21,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
+                    <!-- added logo image -->
                     <img src="assets/logo.png" alt="firmus digital logo" class="logo-img">
                     <h1>Firmus Digital</h1>
                 </div>
@@ -28,6 +30,7 @@
                 <nav class="nav-desktop">
                     <a href="#services" class="nav-link">Services</a>
                     <a href="#about" class="nav-link">About</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
                     <button class="btn btn-primary" onclick="scrollToSection('contact')">Contact</button>
                 </nav>
                 
@@ -43,6 +46,7 @@
             <nav class="nav-mobile" id="mobileNav">
                 <a href="#services" class="nav-link-mobile">Services</a>
                 <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#faq" class="nav-link-mobile">FAQ</a>
                 <button class="btn btn-primary btn-full" onclick="scrollToSection('contact')">Contact</button>
             </nav>
         </div>
@@ -78,6 +82,7 @@
     <!-- Proof Section -->
     <section class="proof-section">
         <div class="container">
+            <!-- added section header with new messaging -->
             <div class="section-header">
                 <h2 class="section-title">What Happens When You Work With Us</h2>
                 <p class="section-subtitle">Real businesses. Real results. Here's what changes when we step in.</p>
@@ -85,6 +90,7 @@
             <!-- Stats -->
             <div class="stats-grid">
                 <div class="stat-item">
+                    <!-- added stat icons and updated descriptions -->
                     <div class="stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -97,7 +103,8 @@
                 <div class="stat-item">
                     <div class="stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2L3 14h9l-1 8L21 10h-9l1-8z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1h9l4-4-4-4H3"/>
                         </svg>
                     </div>
                     <div class="stat-number" id="turnaroundStat">50%</div>
@@ -107,7 +114,7 @@
                 <div class="stat-item">
                     <div class="stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8v-4l8 8-8 8v-4H8v-8h8zM0 12h8"/>
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
                         </svg>
                     </div>
                     <div class="stat-number" id="productivityStat">2X</div>
@@ -115,6 +122,7 @@
                     <p class="stat-description">Same team, same payroll. Just twice the output.</p>
                 </div>
             </div>
+            <!-- added proof CTA button -->
             <div class="proof-cta">
                 <button class="btn btn-secondary btn-lg" onclick="scrollToSection('contact')">
                     Book My Free Consultation
@@ -123,41 +131,30 @@
                     </svg>
                 </button>
             </div>
-            <br>
-            <br>
-            <!-- Testimonial -->
-            <!-- <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <div class="testimonial-avatar">
-                        <img src="/placeholder.svg?height=80&width=80" alt="Sarah Johnson">
-                    </div>
-                    <div class="testimonial-text">
-                        <div class="stars">
-                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                        </div>
-                        <blockquote>
-                            "Firmus Digital transformed our entire operation. What used to take weeks now happens in days, and our team can focus on what really matters - growing the business."
-                        </blockquote>
-                        <cite>Sarah Johnson, CEO at TechFlow Solutions</cite>
-                    </div>
+            
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-container">
+                
+                <div class="testimonial-card">
+                <p>“Firmus helped us automate our onboarding – saved us hours every week. Smooth process, real results.”</p>
+                <h4>- Sarah M, Startup Founder</h4>
                 </div>
+                
+                <div class="testimonial-card">
+                <p>“The team redesigned our website and conversions went up immediately. Couldn’t recommend them enough.”</p>
+                <h4>- James K, Marketing Lead</h4>
+                </div>
+                
+                <div class="testimonial-card">
+                <p>“They built an internal app that cut our workflow in half. Super professional and easy to work with.”</p>
+                <h4>- Priya N, Operations Manager</h4>
+                </div>
+                
             </div>
-        </div>
-    </section> -->
+            </section>
+
 
     <!-- Process Section -->
     <section id="about" class="process-section">
@@ -181,9 +178,11 @@
 
                 <div class="process-card">
                     <div class="process-icon">
+                        <!-- Updated icon for tailored solution design -->
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"/>
-                            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1h9l4-4-4-4H3"/>
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            <path d="M12 8v8"/>
+                            <path d="M8 12h8"/>
                         </svg>
                     </div>
                     <h3>Tailored Solution Design</h3>
@@ -217,13 +216,15 @@
                     <div class="time-feature">
                         <svg class="time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12,6 12,12 16,14"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                         </svg>
                         <span>Rapid deployment in 2-4 weeks</span>
                     </div>
                 </div>
                 <div class="time-visual">
                     <div class="time-illustration">
+                        <!-- updated image source and alt text -->
                         <img src="assets/quick-wins-section.png" alt="Team working on YOUR project">
                     </div>
                 </div>
@@ -303,10 +304,173 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions Clients Ask</h2>
+                <p class="section-subtitle">Get answers to common concerns and learn how we can help your business</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                        <span>How do I know if my business needs IT consulting?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-1" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>If you're spending hours on repetitive tasks, struggling with outdated systems, or feeling like your technology is holding you back instead of helping you grow, you need IT consulting. Common signs include: manual data entry taking up valuable time, difficulty accessing information quickly, customer service bottlenecks, or feeling overwhelmed by technology decisions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                        <span>What makes Firmus Digital different from other IT consultants?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-2" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>We focus on quick wins and lasting impact. While others take months to deliver, we launch agile prototypes within 2-4 weeks so you see immediate improvements. We don't just build technology - we understand your business processes and create solutions that actually solve your problems. Plus, we speak plain English, not tech jargon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                        <span>How much does it cost to work with you?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-3" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>Every business is different, so we tailor our pricing to your specific needs and budget. Our projects typically range from R15,000 for simple automations to R150,000+ for comprehensive business applications. The key is that our solutions pay for themselves through increased efficiency and reduced manual work. We'll provide a clear, fixed-price quote after understanding your requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+                        <span>How long does a typical project take?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-4" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>Simple automations and chatbots: 2-4 weeks. Website development: 4-8 weeks. Custom business applications: 8-16 weeks. The difference is we deliver working prototypes early so you can start benefiting immediately while we refine and expand the solution. You're not waiting months to see results.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+                        <span>What if I'm not tech-savvy? Will I be able to use what you build?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-5" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>We design everything to be user-friendly and intuitive. If your team can use email and browse the web, they can use our solutions. We provide training, documentation, and ongoing support. Our goal is to make technology work for you, not against you. Many of our clients say our solutions are easier to use than the manual processes they replaced.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+                        <span>Do you provide ongoing support after the project is complete?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-6" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>Yes! We offer flexible support packages including hosting, maintenance, updates, and technical support. We're not the type of company that disappears after delivery. Your success is our success, and we're here to help your business grow with ongoing improvements and expansions to your systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+                        <span>Can you integrate with our existing systems?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-7" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>In most cases, yes. We specialize in connecting different systems and making them work together seamlessly. Whether it's your CRM, accounting software, email marketing platform, or industry-specific tools, we can usually build bridges between them. This eliminates duplicate data entry and ensures information flows smoothly across your business.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-8">
+                        <span>What if my requirements change during the project?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-8" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>We expect requirements to evolve - that's normal! Our agile approach includes regular check-ins where we review progress and adjust as needed. Minor changes are usually included, while significant scope changes are discussed transparently with clear pricing. The key is communication - we'd rather build exactly what you need than stick rigidly to an outdated plan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-9">
+                        <span>How do I know the solution will actually work for my business?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-9" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>We start with a thorough discovery process to understand your specific challenges and workflows. Then we build prototypes and get your feedback before finalizing anything. You'll see and test the solution before it's complete. Plus, our track record speaks for itself - we've helped businesses reduce manual work by 60% and double productivity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-10">
+                        <span>What happens if something goes wrong after launch?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-10" aria-hidden="true">
+                        <div class="faq-content">
+                            <p>We provide warranty coverage for all our work and are available for urgent support when needed. Our solutions are built to be reliable, but if issues arise, we fix them quickly. We also provide monitoring and proactive maintenance to prevent problems before they impact your business. Your peace of mind is important to us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <p>Still have questions?</p>
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                    Book Your Free Consultation
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section id="contact" class="cta-section">
         <div class="container">
             <div style="color: bisque;" class="cta-header">
+                <!-- updated CTA header styling -->
                 <h2 >Future-Proof Your Digital Operations</h2>
                 <p >
                     With Firmus Digital, efficiency, automation, and growth aren't buzzwords, they're your new reality.
@@ -314,61 +478,64 @@
             </div>
 
             <div class="cta-content">
-                <!-- Contact Form -->
-<div class="contact-form-card">
-  <h3>Book a Free Consultation</h3>
-  <form id="contactForm" class="contact-form" action="https://formspree.io/f/mkgvweez" method="POST">
-    
-    <!-- Name -->
-    <div class="form-group">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="John Doe" required>
-    </div>
-    
-    <!-- Email -->
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="john@example.com" required>
-    </div>
-    
-    <!-- Phone -->
-    <div class="form-group">
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="+27 74 123 4567">
-    </div>
-    
-    <!-- Services Dropdown -->
-    <div class="form-group">
-      <label for="service">I’m interested in:</label>
-      <select id="service" name="service">
-        <option value="">Not sure / Just want consultation</option>
-        <option value="ai-bots">AI-Powered Bots</option>
-        <option value="hosting">Hosting & Managed Services</option>
-        <option value="in-house-apps">In-House Business Applications</option>
-        <option value="process-automation">Business Process Automations</option>
-        <option value="website-ux">Website Development & UX Optimization</option>
-      </select>
-    </div>
-    
-    <!-- Project Description -->
-    <div class="form-group">
-      <label for="message">Tell us about your project <span style="font-weight:normal;">(optional, you can leave this for the call)</span></label>
-      <textarea id="message" name="message" rows="4" placeholder="Example: We want to automate our client onboarding process, improve our website UX, and implement an AI chatbot." ></textarea>
-    </div>
-    
-    <!-- Hidden fields for Formspree -->
-    <input type="hidden" name="_subject" value="New Contact Form Submission - Firmus Digital">
-    <input type="hidden" name="_next" value="https://firmusdigital.co.za/thank-you">
-    
-    <!-- Submit -->
-    <button type="submit" class="btn btn-primary btn-full">
-      Send Message
-      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M5 12h14M12 5l7 7-7 7"/>
-      </svg>
-    </button>
-  </form>
-</div>
+            <!-- Fixed contact form container spacing -->
+            <div class="contact-form-container">
+                <div class="contact-form-card">
+                    <h3>Book a Free Consultation</h3>
+                    <!-- updated contact form with Formspree integration and new fields -->
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mkgvweez" method="POST">
+                        
+                        <!-- Name -->
+                        <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+27 74 123 4567">
+                        </div>
+                        
+                        <!-- Services Dropdown -->
+                        <div class="form-group">
+                        <label for="service">I'm interested in:</label>
+                        <select id="service" name="service">
+                            <option value="">Not sure / Just want consultation</option>
+                            <option value="ai-bots">AI-Powered Bots</option>
+                            <option value="hosting">Hosting & Managed Services</option>
+                            <option value="in-house-apps">In-House Business Applications</option>
+                            <option value="process-automation">Business Process Automations</option>
+                            <option value="website-ux">Website Development & UX Optimization</option>
+                        </select>
+                        </div>
+                        
+                        <!-- Project Description -->
+                        <div class="form-group">
+                        <label for="message">Tell us about your project <br><span style="font-weight:normal;">(optional, you can leave this for the call)</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Example: We want to automate our client onboarding process, improve our website UX, and implement an AI chatbot." ></textarea>
+                        </div>
+                        
+                        <!-- Hidden fields for Formspree -->
+                        <!-- <input type="hidden" name="_subject" value="New Contact Form Submission - Firmus Digital">
+                        <input type="hidden" name="_next" value="https://firmusdigital.co.za/thank-you">
+                        -->
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
 
 
                 <!-- Contact Info -->
@@ -440,6 +607,7 @@
                     <ul class="footer-links">
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
