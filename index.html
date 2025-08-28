@@ -536,7 +536,10 @@
                 <div class="contact-form-card">
                     <h3>Book a Free Consultation</h3>
                     <!-- updated contact form with Formspree integration and new fields -->
-                    <form id="contactForm" class="contact-form" action="https://staticsiteforms.co.uk/lonaleo20@gmail.com" method="POST">
+                    <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="c515b0f5-d56c-4f0f-864a-37b6d9386a24">
                         
                         <!-- Name -->
                         <div class="form-group">
@@ -575,10 +578,6 @@
                         <textarea id="message" name="message" rows="5" placeholder="Example: We want to automate our client onboarding process, improve our website UX, and implement an AI chatbot." ></textarea>
                         </div>
                         
-                        <!-- Hidden fields for Formspree -->
-                        <!-- <input type="hidden" name="_subject" value="New Contact Form Submission - Firmus Digital">
-                        <input type="hidden" name="_next" value="https://firmusdigital.co.za/thank-you">
-                        -->
                         <!-- Submit -->
                         <button type="submit" class="btn btn-primary btn-full">
                         Send Message
