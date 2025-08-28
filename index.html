@@ -87,41 +87,65 @@
                 <h2 class="section-title">What Happens When You Work With Us</h2>
                 <p class="section-subtitle">Real businesses. Real results. Here's what changes when we step in.</p>
             </div>
-            <!-- Stats -->
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <!-- added stat icons and updated descriptions -->
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <div class="stat-number" id="laborStat">60%</div>
-                    <p class="stat-label">Less Manual Work</p>
-                    <p class="stat-description">Stop wasting hours on busywork. Your team should build, not babysit spreadsheets.</p>
+            <!-- Stats Section -->
+            <section style="padding:3rem 1rem; background-color:#fff;">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:2rem; max-width:1200px; margin:0 auto;">
+
+                <div style="background-color: #fff; padding:1.5rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+                <div style="width:50px; height:50px; margin:0 auto 1rem auto; color:#007BFF;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:100%; height:100%;">
+                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"/>
-                            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1h9l4-4-4-4H3"/>
-                        </svg>
-                    </div>
-                    <div class="stat-number" id="turnaroundStat">50%</div>
-                    <p class="stat-label">Faster Turnaround</p>
-                    <p class="stat-description">That project you dread for 3 months? Done in 6 weeks.</p>
+                <div style="font-size:2rem; font-weight:700; margin-bottom:0.5rem;">60%</div>
+                <p style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;">Less Manual Work</p>
+                <p style="font-size:0.9rem; color:#555;">Stop wasting hours on busywork. Your team should build, not babysit spreadsheets.</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
-                        </svg>
-                    </div>
-                    <div class="stat-number" id="productivityStat">2X</div>
-                    <p class="stat-label">Productivity</p>
-                    <p class="stat-description">Same team, same payroll. Just twice the output.</p>
+
+                <div style="background-color:#fff; padding:1.5rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+                <div style="width:50px; height:50px; margin:0 auto 1rem auto; color:#007BFF;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:2.5rem; height:2.5rem; margin-bottom:0.5rem;">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                 </div>
+                <div style="font-size:2rem; font-weight:700; margin-bottom:0.5rem;">50%</div>
+                <p style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;">Faster Turnaround</p>
+                <p style="font-size:0.9rem; color:#555;">Projects that used to take months now finish in weeks.</p>
+                </div>
+
+                <div style="background-color:#fff; padding:1.5rem; border-radius:1rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+                <div style="width:50px; height:50px; margin:0 auto 1rem auto; color:#007BFF;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:100%; height:100%;">
+                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                    </svg>
+                </div>
+                <div style="font-size:2rem; font-weight:700; margin-bottom:0.5rem;">2X</div>
+                <p style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;">Productivity</p>
+                <p style="font-size:0.9rem; color:#555;">Same team, same payroll — just double the output.</p>
+                </div>
+
             </div>
+
+            <style>
+                @media (max-width:768px){
+                div[style*="display:grid"]{
+                    grid-template-columns:1fr !important;
+                    gap:1.5rem !important;
+                }
+                div[style*="padding:1.5rem"]{
+                    padding:1rem !important;
+                }
+                div[style*="font-size:2rem"]{
+                    font-size:1.75rem !important;
+                }
+                p[style*="font-size:0.9rem"]{
+                    font-size:0.85rem !important;
+                }
+                }
+            </style>
+            </section>
+
+
             <!-- added proof CTA button -->
             <div class="proof-cta">
                 <button class="btn btn-secondary btn-lg" onclick="scrollToSection('contact')">
@@ -322,7 +346,10 @@
                     </button>
                     <div class="faq-answer" id="faq-1" aria-hidden="true">
                         <div class="faq-content">
-                            <p>If you're spending hours on repetitive tasks, struggling with outdated systems, or feeling like your technology is holding you back instead of helping you grow, you need IT consulting. Common signs include: manual data entry taking up valuable time, difficulty accessing information quickly, customer service bottlenecks, or feeling overwhelmed by technology decisions.</p>
+                            <p>If your team is spending too much time on repetitive tasks, struggling with scattered data, 
+                                or missing opportunities due to inefficient systems, IT consulting can help. 
+                                Book a consultation and we’ll evaluate your operations and show you where digital solutions 
+                                can save time, reduce errors, and unlock growth.</p>
                         </div>
                     </div>
                 </div>
@@ -336,7 +363,10 @@
                     </button>
                     <div class="faq-answer" id="faq-2" aria-hidden="true">
                         <div class="faq-content">
-                            <p>We focus on quick wins and lasting impact. While others take months to deliver, we launch agile prototypes within 2-4 weeks so you see immediate improvements. We don't just build technology - we understand your business processes and create solutions that actually solve your problems. Plus, we speak plain English, not tech jargon.</p>
+                            <p>We don’t just provide tools—we design systems that fit your business. 
+                                Our approach combines deep industry knowledge, custom automation, and 
+                                intuitive UX to make sure the solutions are practical, effective, and easy to use. 
+                                In short, we focus on measurable results and lasting impact.</p>
                         </div>
                     </div>
                 </div>
@@ -350,7 +380,9 @@
                     </button>
                     <div class="faq-answer" id="faq-3" aria-hidden="true">
                         <div class="faq-content">
-                            <p>Every business is different, so we tailor our pricing to your specific needs and budget. Our projects typically range from R15,000 for simple automations to R150,000+ for comprehensive business applications. The key is that our solutions pay for themselves through increased efficiency and reduced manual work. We'll provide a clear, fixed-price quote after understanding your requirements.</p>
+                            <p>Every business is unique, so costs depend on the complexity and scope of your needs. 
+                                The best way to find out is to book a free consultation—
+                                we’ll discuss your goals and provide a tailored plan with clear next steps and investment expectations.</p>
                         </div>
                     </div>
                 </div>
@@ -364,7 +396,9 @@
                     </button>
                     <div class="faq-answer" id="faq-4" aria-hidden="true">
                         <div class="faq-content">
-                            <p>Simple automations and chatbots: 2-4 weeks. Website development: 4-8 weeks. Custom business applications: 8-16 weeks. The difference is we deliver working prototypes early so you can start benefiting immediately while we refine and expand the solution. You're not waiting months to see results.</p>
+                            <p>Timelines vary based on the solution, but our focus is on fast, iterative delivery. 
+                                Many clients see meaningful improvements within weeks, not months. 
+                                Schedule a consultation and we’ll map out a timeline specific to your business.</p>
                         </div>
                     </div>
                 </div>
@@ -378,7 +412,10 @@
                     </button>
                     <div class="faq-answer" id="faq-5" aria-hidden="true">
                         <div class="faq-content">
-                            <p>We design everything to be user-friendly and intuitive. If your team can use email and browse the web, they can use our solutions. We provide training, documentation, and ongoing support. Our goal is to make technology work for you, not against you. Many of our clients say our solutions are easier to use than the manual processes they replaced.</p>
+                            <p> Absolutely. We design intuitive, easy-to-use systems, and 
+                                provide training and documentation so your team can adopt the tools confidently.
+                                Our goal is to make technology work for you, not against you. 
+                                Many of our clients say our solutions are easier to use than the manual processes they replaced.</p>
                         </div>
                     </div>
                 </div>
@@ -392,7 +429,10 @@
                     </button>
                     <div class="faq-answer" id="faq-6" aria-hidden="true">
                         <div class="faq-content">
-                            <p>Yes! We offer flexible support packages including hosting, maintenance, updates, and technical support. We're not the type of company that disappears after delivery. Your success is our success, and we're here to help your business grow with ongoing improvements and expansions to your systems.</p>
+                            <p>Yes. We offer flexible support options to keep your systems running smoothly, handle updates, and address any questions. 
+                                A consultation will help determine the level of support that fits your business best.
+                                Your success is our success, and we're here to 
+                                help your business grow with ongoing improvements and expansions to your systems.</p>
                         </div>
                     </div>
                 </div>
@@ -420,7 +460,11 @@
                     </button>
                     <div class="faq-answer" id="faq-8" aria-hidden="true">
                         <div class="faq-content">
-                            <p>We expect requirements to evolve - that's normal! Our agile approach includes regular check-ins where we review progress and adjust as needed. Minor changes are usually included, while significant scope changes are discussed transparently with clear pricing. The key is communication - we'd rather build exactly what you need than stick rigidly to an outdated plan.</p>
+                            <p>We expect requirements to evolve - that's normal! 
+                                Our agile approach includes regular check-ins where we review progress and adjust as needed. 
+                                Minor changes are usually included, while significant scope changes are 
+                                discussed transparently with clear pricing. The key is communication - 
+                                we'd rather build exactly what you need than stick rigidly to an outdated plan.</p>
                         </div>
                     </div>
                 </div>
@@ -434,7 +478,10 @@
                     </button>
                     <div class="faq-answer" id="faq-9" aria-hidden="true">
                         <div class="faq-content">
-                            <p>We start with a thorough discovery process to understand your specific challenges and workflows. Then we build prototypes and get your feedback before finalizing anything. You'll see and test the solution before it's complete. Plus, our track record speaks for itself - we've helped businesses reduce manual work by 60% and double productivity.</p>
+                            <p>We start with a thorough discovery process to understand your specific challenges and workflows. 
+                                Then we build prototypes and get your feedback before finalizing anything. 
+                                You'll see and test the solution before it's complete. Plus, our track record speaks for itself - 
+                                we've helped businesses reduce manual work by 60% and double productivity.</p>
                         </div>
                     </div>
                 </div>
@@ -448,7 +495,8 @@
                     </button>
                     <div class="faq-answer" id="faq-10" aria-hidden="true">
                         <div class="faq-content">
-                            <p>We provide warranty coverage for all our work and are available for urgent support when needed. Our solutions are built to be reliable, but if issues arise, we fix them quickly. We also provide monitoring and proactive maintenance to prevent problems before they impact your business. Your peace of mind is important to us.</p>
+                            <p>We don’t just hand over the keys. Our team provides troubleshooting, guidance, and ongoing support 
+                                to fix any issues quickly, so your operations stay uninterrupted and productive.</p>
                         </div>
                     </div>
                 </div>

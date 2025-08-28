@@ -229,9 +229,9 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add("animate")
 
       // Special handling for stats animation
-      if (entry.target.classList.contains("proof-section")) {
-        animateCounters()
-      }
+      // if (entry.target.classList.contains("proof-section")) {
+      //   animateCounters()
+      // }
 
       // Special handling for FAQ items animation
       if (entry.target.classList.contains("faq-section")) {
@@ -267,29 +267,29 @@ document
     observer.observe(el)
   })
 
-// Counter Animation
-let countersAnimated = false
+// // Counter Animation
+// let countersAnimated = false
 
-function animateCounters() {
-  if (countersAnimated) return
-  countersAnimated = true
+// function animateCounters() {
+//   if (countersAnimated) return
+//   countersAnimated = true
 
-  const laborStat = document.getElementById("laborStat")
-  const turnaroundStat = document.getElementById("turnaroundStat")
-  const productivityStat = document.getElementById("productivityStat")
+//   const laborStat = document.getElementById("laborStat")
+//   const turnaroundStat = document.getElementById("turnaroundStat")
+//   const productivityStat = document.getElementById("productivityStat")
 
-  // Animate stats
-  animateCounter(laborStat, 0, 60, "%", 2000)
-  animateCounter(turnaroundStat, 0, 50, "%", 2000)
-  animateCounter(productivityStat, 0, 2, "X", 2000)
+//   // Animate stats
+//   animateCounter(laborStat, 0, 60, "%", 2000)
+//   animateCounter(turnaroundStat, 0, 50, "%", 2000)
+//   animateCounter(productivityStat, 0, 2, "X", 2000)
 
-  // Add animation class to stat items
-  document.querySelectorAll(".stat-item").forEach((item, index) => {
-    setTimeout(() => {
-      item.classList.add("animate")
-    }, index * 200)
-  })
-}
+//   // Add animation class to stat items
+//   document.querySelectorAll(".stat-item").forEach((item, index) => {
+//     setTimeout(() => {
+//       item.classList.add("animate")
+//     }, index * 200)
+//   })
+// }
 
 function animateCounter(element, start, end, suffix, duration) {
   const range = end - start
