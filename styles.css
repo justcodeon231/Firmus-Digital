@@ -203,17 +203,18 @@ h6 {
   color: var(--primary);
 }
 
-/* Mobile Menu */
+/* Mobile Menu Button */
 .mobile-menu-btn {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
+  z-index: 1001; /* stays above menu */
 }
 
 @media (min-width: 768px) {
@@ -223,50 +224,67 @@ h6 {
 }
 
 .hamburger {
-  width: 2rem;
-  height: 0.25rem;
+  width: 100%;
+  height: 3px;
   background: var(--foreground);
-  border-radius: 10px;
-  transition: all 0.3s linear;
-  position: relative;
-  transform-origin: 1px;
+  border-radius: 2px;
+  transition: all 0.35s ease;
+  transform-origin: center;
 }
 
-.mobile-menu-btn.open .hamburger:first-child {
-  transform: rotate(45deg);
+.mobile-menu-btn.open .hamburger:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
 }
 
 .mobile-menu-btn.open .hamburger:nth-child(2) {
   opacity: 0;
-  transform: translateX(20px);
 }
 
 .mobile-menu-btn.open .hamburger:nth-child(3) {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-7px);
 }
 
+/* Mobile Nav */
 .nav-mobile {
-  display: none;
-  background-color: var(--background);
+  position: absolute;
+  top: 60px; /* adjust to header height */
+  left: 0;
+  width: 100%;
+  background: var(--background);
   border-top: 1px solid var(--border);
-  padding: 1rem 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1.25rem; /* left & right whitespace */
+  box-sizing: border-box;
+  transition: all 0.35s ease;
 }
 
 .nav-mobile.open {
-  display: block;
+  max-height: 600px; /* large enough for all links */
+  opacity: 1;
+  padding: 1.25rem; /* full padding all around when open */
+  border-radius: 0 0 10px 10px; /* soft rounded bottom */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .nav-link-mobile {
   display: block;
-  padding: 0.5rem 0.75rem;
+  padding: 0.85rem 0;
+  margin: 0.25rem 0;
   color: var(--foreground);
   text-decoration: none;
-  transition: color 0.2s ease;
+  font-size: 1.05rem;
+  transition: background 0.25s ease, color 0.25s ease;
+  border-radius: 6px;
 }
 
 .nav-link-mobile:hover {
+  background: rgba(0,0,0,0.05);
   color: var(--primary);
 }
+
+
 
 /* Hero Section */
 .hero {
