@@ -305,7 +305,7 @@ h6 {
 .hero-pattern {
   position: absolute;
   inset: 0;
-  background-image: url("/assets/abstract-digital-pattern.png");
+  background-image: url("/assets/abstract-digital-pattern.webp");
   background-size: cover;
   background-position: center;
   opacity: 0.35;
